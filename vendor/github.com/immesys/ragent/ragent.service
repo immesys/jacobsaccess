@@ -1,0 +1,9 @@
+[Unit]
+Description=BW2 RAgent
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/ragent server /etc/bw2/ragent.ent 0.0.0.0:28590 127.0.0.1:28589
+
+[Install]
+WantedBy=multi-user.target
